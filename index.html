@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query-style.css" />
+    <title>Angello Café</title>
+    <script
+      src="https://kit.fontawesome.com/c752d1c239.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing-page" class="landing-page">
+      <div class="logo-wrapper">
+        <img class="logo" src="./img/angello_wb_svg.svg" alt="logo" />
+      </div>
+
+      <header>
+        <div class="nav-wrapper">
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+            <!-- class is switched in JS -->
+          </div>
+          <nav class="navigation open">
+            <ul class="navigation-content">
+              <li><a href="#caffee-wrapper">Nabídka kávy</a></li>
+              <li><a href="#gallery">Domácí dezerty</a></li>
+              <li><a href="#o-nas">O nás</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="second-line"></div>
+      </header>
+      <div class="info-container">
+        <h2>Otevírací doba :</h2>
+        <div class="openinghrs">
+          <p><strong>po - pá 10:00 - 18:00</strong></p>
+          <p><strong>so - ne 10:00 - 18:00</strong></p>
+        </div>
+
+        <div class="phone-email">
+          <p aria-label="Důležité: Telefonní číslo +420 123 125 358">
+            +420 123 125 358
+          </p>
+          <p>
+            <a href="mailto:info@angello.cz">info@angello.cz</a>
+          </p>
+        </div>
+      </div>
+      <aside>
+        <div class="mode-box">
+          <i class="fa-solid fa-sun"></i>
+          <!-- <i class="fa-solid fa-moon"></i> -->
+        </div>
+      </aside>
+      <div class="button-box">
+        <button>
+          <a href="#contact-form" class="button-text">Rezervace</a
+          ><i class="fa-solid fa-angles-down"></i>
+        </button>
+      </div>
+    </section>
+
+    <main>
+      <section class="content-section">
+        <div id="caffee-wrapper" class="caffee-wrapper">
+          <p>... prémiová káva z lokálních pražíren</p>
+          <div class="caffeeimg-container">
+            <img
+              src="./img/caffee.jpeg"
+              alt="Šálek prémiové kávy z lokálních pražíren"
+            />
+          </div>
+        </div>
+
+        <div id="gallery" class="gallery">
+          <p>Připravujeme pro Vás dezerty z domácích surovin ...</p>
+          <div class="glr-pictures-wrapper">
+            <div class="img1-container">
+              <img
+                src="./img/chocolate_cake.jpeg"
+                alt="Čokoládový dort z domácích surovin"
+              />
+            </div>
+            <div class="img2-container">
+              <img
+                src="./img/creamy_cake.jpeg"
+                alt="Mascarpone dort z domácích surovin"
+              />
+            </div>
+            <div class="img3-container">
+              <img
+                src="./img/biscuit_cake.jpeg"
+                alt="Sušenkový dort z domácích surovin"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="o-nas" class="o-nas">
+          <div class="onas-text-wrapper">
+            <h2>Naše filosofie</h2>
+            <p>
+              Naše rodinná kavárna vznikla z lásky k dobré kávě a touhy vytvořit
+              místo, kde se každý cítí jako doma. Nabízíme prémiový sortiment,
+              který pečlivě vybíráme od malých pražíren a lokálních dodavatelů.
+            </p>
+            <p>
+              Každý šálek kávy je u nás malým rituálem, za kterým stojí kvalita
+              a udržitelnost.
+            </p>
+            <p>
+              S osobním přístupem a úsměvem vás přivítá obsluha, která dbá na
+              to, aby vaše návštěva byla nezapomenutelným zážitkem. Vítejte v
+              kavárně, kde každá káva vypráví svůj příběh.
+            </p>
+          </div>
+
+          <div class="womanimg-container">
+            <img src="./img/woman_with_cup.jpeg" alt="Šálek s logem" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-form" class="contact-form">
+        <div class="form-wrapper">
+          <h2>Kontaktní formulář</h2>
+          <form>
+            <input type="text" placeholder="Jméno a příjmení" required />
+            <input type="email" placeholder="Email" required />
+            <input
+              id="password"
+              type="password"
+              placeholder="Zvolte heslo pro správu rezervace"
+              required
+            />
+            <input
+              id="confirmPassword"
+              type="password"
+              placeholder="Zadejte heslo znovu"
+              required
+            />
+            <textarea placeholder="Napište nám..." rows="4" required></textarea>
+            <button type="submit">Odeslat</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="adr-soc-iframe-wrapper">
+        <div class="adr-socials-wrapper">
+          <div class="adress-wrapper">
+            <p><strong>Angello Café -</strong></p>
+            <p><strong>Adresa 46/51</strong></p>
+            <p><strong>Město 3</strong></p>
+          </div>
+          <div class="socials-icons">
+            <img src="./img/tripadvisor_logo_icon.png" alt="tripadvisor_logo" />
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="iframe-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.095543905787!2d17.58936887773095!3d49.426007671414624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713a5cee25a887d%3A0xf840acc7e50db104!2sKafe%20pod%20radnic%C3%AD!5e0!3m2!1sen!2scz!4v1724357669122!5m2!1sen!2scz"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="back-button">
+        <button>
+          <i class="fa-solid fa-angles-up"></i>
+          <a href="#landing-page" class="button-text">Zpět</a>
+        </button>
+      </div>
+
+      <div class="end-of-page">
+        <p>&copy; 2024 - Angello Café. Všechna práva vyhrazena.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+/* Hide cross/hamburger for Desktop */
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+/* Landing Page - Desktop */
+
+@media (min-width: 768px) {
+  .landing-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+  }
+
+  header {
+    grid-column: 1 / 13;
+    grid-row: 2 / 2;
+    margin-top: 5%;
+  }
+}
+
+/* Logo's size and position for Desktop */
+
+@media (min-width: 768px) {
+  .logo-wrapper {
+    position: static;
+    grid-column: 2/ 3;
+    grid-row: 2 / 2;
+    z-index: 10;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 200%;
+  }
+}
+
+/* Navigation - Desktop */
+
+@media (min-width: 768px) {
+  .nav-wrapper {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navigation {
+    visibility: visible !important;
+    background-color: var(--nav-bgcolor);
+    justify-content: right;
+    width: 100%;
+    height: 3.3em;
+    border-radius: 0;
+  }
+
+  .navigation-content {
+    flex-direction: row;
+    padding-right: 3vw;
+    gap: 3.5vw;
+    margin: 3vh 0 3vh 0;
+  }
+
+  .navigation-content a {
+    font-size: 10px;
+  }
+
+  .navigation-content li a:hover {
+    transform: scale(1.1);
+    color: var(--hoverText-color);
+  }
+}
+
+/* Decorative line - for Desktop NAV */
+
+@media (min-width: 768px) {
+  .second-line {
+    height: 5px;
+    width: 100%;
+    background-color: var(--nav-bgcolor);
+    margin-top: 5px;
+    grid-column: 1 / 13;
+    grid-row: 4 / 4;
+  }
+}
+
+/* Info container */
+
+@media (min-width: 768px) {
+  .info-container {
+    margin: 0 0 0 3vh;
+    height: 45vh;
+    min-width: 180px;
+    max-width: 400px;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+}
+
+/* Button Rezervace Landing Page - Desktop */
+
+@media (min-width: 768px) {
+  .button-box {
+    grid-column: 6/8;
+    grid-row: 5/6;
+    margin-bottom: 20%;
+  }
+}
+
+/* Content section - Desktop */
+
+@media (min-width: 768px) {
+  .caffee-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10vw 7vw;
+  }
+
+  .caffeeimg-container {
+    width: 50%;
+    text-align: right;
+  }
+
+  .caffeeimg-container img {
+    margin: 0;
+    width: 50%;
+  }
+
+  .caffee-wrapper p {
+    width: 50%;
+    margin: 0;
+    text-align: right;
+  }
+}
+
+/* Gallery */
+
+@media (min-width: 768px) {
+  .glr-pictures-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vw auto;
+  }
+
+  .img1-container,
+  .img2-container,
+  .img3-container {
+    width: 60%;
+    flex-grow: 1;
+  }
+
+  .img1-container {
+    text-align: right;
+  }
+
+  .img3-container {
+    text-align: left;
+  }
+
+  .gallery p {
+    margin-left: 7vw;
+  }
+
+  .gallery img {
+    height: auto;
+    width: 80%;
+    margin: 0;
+  }
+}
+
+/* O nás - Desktop */
+
+@media (min-width: 768px) {
+  .o-nas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7vw;
+  }
+
+  .onas-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 45%;
+  }
+
+  .o-nas p {
+    margin-bottom: 2vh;
+  }
+
+  .womanimg-container {
+    text-align: right;
+    width: 50%;
+  }
+
+  .womanimg-container img {
+    margin: 0;
+  }
+}
+
+/* Contact Form - Desktop */
+
+@media (min-width: 768px) {
+  .contact-form {
+    padding-right: 15%;
+    padding-left: 15%;
+    margin: 7vw 7vw;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    margin: 0 auto;
+  }
+
+  form input {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 4;
+  }
+
+  form button {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+}
+
+/* Footer - Desktop */
+
+@media (min-width: 768px) {
+  .adr-soc-iframe-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    margin: 7vw 7vw;
+  }
+
+  .adr-socials-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 15vw;
+  }
+
+  .iframe-container {
+    width: 50%;
+    margin: 0;
+  }
+}
